@@ -30,8 +30,8 @@ export default function Form() {
       <div className="row">
         <div className="col-7">
           <h1>
-            <span>{Data.name} </span>
-            <span> {Data.temperature}°C</span>
+            {Data.name} {"  "}
+            {Data.temperature}°C
           </h1>
           <ul>
             <li>{Data.description}</li>
@@ -50,7 +50,7 @@ export default function Form() {
     <div className="Form">
       <form onSubmit={handleSubmit}>
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-6">
             <input
               type="text"
               placeholder="Enter city name..."
@@ -60,11 +60,6 @@ export default function Form() {
           <div className="col-md-3">
             <button type="submit" className="btn btn-outline-secondary">
               Search
-            </button>
-          </div>
-          <div className="col-md-5">
-            <button type="button" className="btn btn-outline-secondary">
-              My Location
             </button>
           </div>
         </div>
