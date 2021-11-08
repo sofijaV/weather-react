@@ -2,6 +2,39 @@
   text-align: center;
   margin: 50px 0 20px;
 }
+ul,
+h1 {
+  color: #474c5c;
+  font-family: "Annie Use Your Telescope", cursive;
+  text-align: center;
+}
+h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  color: #ffdfc5;
+}
+ul {
+  list-style-type: none;
+  font-size: 25px;
+  margin: 0px;
+  margin-bottom: 20px;
+  padding: 0px;
+  text-transform: capitalize;
+}
+.Note {
+  width: 200px;
+  height: auto;
+  filter: brightness(105%) sepia(60%);
+  padding: 10px;
+}
+.Weather-icon {
+  width: 90px;
+  margin-top: 40px;
+  position: relative;
+  bottom: 180px;
+  left: 70px;
+  transform: skew(5deg, 0deg);
+}
 @media (max-width: 767px) {
   .Form button {
     margin-top: 5px;
