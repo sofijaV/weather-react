@@ -29,12 +29,10 @@ export default function Form() {
     setLoaded(
       <div className="row">
         <div className="col-7">
-          <h1>
-            {Data.name} {"  "}
-            {Data.temperature}°C
-          </h1>
+          <h1>{Data.name}</h1>
           <ul>
             <li>{Data.description}</li>
+            <li>{Data.temperature}°C</li>
             <li>
               High {Data.high}° | Low {Data.low}°{" "}
             </li>
@@ -50,7 +48,7 @@ export default function Form() {
     <div className="Form">
       <form onSubmit={handleSubmit}>
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-4">
             <input
               type="text"
               placeholder="Enter city name..."

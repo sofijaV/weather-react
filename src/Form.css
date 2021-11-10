@@ -5,15 +5,16 @@
 ul,
 h1 {
   color: #474c5c;
-  font-family: "Annie Use Your Telescope", cursive;
   text-align: center;
 }
 h1 {
   font-size: 60px;
   margin-top: 20px;
-  color: #ffdfc5;
+  color: #fd8664;
+  font-family: "Birthstone Bounce", cursive;
 }
 ul {
+  font-family: "Roboto Slab", serif;
   list-style-type: none;
   font-size: 25px;
   margin: 0px;
