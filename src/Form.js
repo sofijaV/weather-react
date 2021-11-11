@@ -62,22 +62,16 @@ export default function Form() {
   }
   let form = (
     <div className="Form">
-      <form onSubmit={handleSubmit}>
-        <div className="row">
-          <div className="col-md-6">
-            <input
-              type="text"
-              placeholder="Enter city name..."
-              onChange={updateCity}
-            ></input>
-          </div>
+      <form onSubmit={handleSubmit} className="d-flex justify-content-around">
+        <input
+          type="text"
+          placeholder="Enter city name..."
+          onChange={updateCity}
+        ></input>
 
-          <div className="col-md-6">
-            <button type="submit" className="btn btn-outline-secondary">
-              Search
-            </button>
-          </div>
-        </div>
+        <button type="submit" className="btn btn-outline-secondary">
+          Search
+        </button>
       </form>
       <hr />
     </div>
