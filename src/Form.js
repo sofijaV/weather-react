@@ -82,7 +82,11 @@ export default function Form() {
         {form}
         {overview}
         <footer className="text-center">
-          <a href="https://github.com/sofijaV/weather-react" target="_blank">
+          <a
+            href="https://github.com/sofijaV/weather-react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Open source-code
           </a>{" "}
           by Sofija
@@ -96,7 +100,11 @@ export default function Form() {
         <h1>Where in the world are you?</h1>
         <img src={planet} alt="Planet-Earth" className="planetBig" />
         <footer className="text-center">
-          <a href="https://github.com/sofijaV/weather-react" target="_blank">
+          <a
+            href="https://github.com/sofijaV/weather-react"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Open source-code
           </a>{" "}
           by Sofija
