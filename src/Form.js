@@ -68,7 +68,6 @@ export default function Form() {
           placeholder="Enter city name..."
           onChange={updateCity}
         ></input>
-
         <button type="submit" className="btn btn-outline-secondary">
           Search
         </button>
