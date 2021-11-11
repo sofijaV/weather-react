@@ -18,21 +18,19 @@ ul {
   font-family: "Roboto Slab", serif;
   list-style-type: none;
   font-size: 25px;
-
   margin-bottom: 20px;
   text-transform: capitalize;
 }
 .mainData {
   background-color: #fd8664;
-
   color: white;
-  padding: 10px;
+
   margin: 0 100px;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .AdditionalInfo {
   background-color: #f6f3ed;
-  border-radius: 10px;
+  border-radius: 5px;
   margin: 0 100px;
 }
 
@@ -57,7 +55,14 @@ footer a:hover {
   color: black;
 }
 @media (max-width: 767px) {
-  .Form button {
-    margin-top: 5px;
+  h1 {
+    font-size: 40px;
+  }
+  .mainData,
+  .AdditionalInfo {
+    margin: 0 auto;
+  }
+  ul {
+    padding: 0;
   }
 }

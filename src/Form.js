@@ -75,40 +75,34 @@ export default function Form() {
       <hr />
     </div>
   );
+  let footer = (
+    <footer className="text-center">
+      <a
+        href="https://github.com/sofijaV/weather-react"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Open source-code
+      </a>{" "}
+      by Sofija
+    </footer>
+  );
 
   if (loaded) {
     return (
       <div>
         {form}
         {overview}
-        <footer className="text-center">
-          <a
-            href="https://github.com/sofijaV/weather-react"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open source-code
-          </a>{" "}
-          by Sofija
-        </footer>
+        {footer}
       </div>
     );
   } else {
     return (
       <div>
         {form}
-        <h1>Where in the world are you?</h1>
+        <h1>Where are you at?</h1>
         <img src={planet} alt="Planet-Earth" className="planetBig" />
-        <footer className="text-center">
-          <a
-            href="https://github.com/sofijaV/weather-react"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Open source-code
-          </a>{" "}
-          by Sofija
-        </footer>
+        {footer}
       </div>
     );
   }
