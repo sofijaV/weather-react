@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #fd8664;
+  --secondary-color: #c5dfa3;
+  --background-color: #f6f3ed;
+  --heading-font: "Birthstone Bounce", cursive;
+  --default-font: "Roboto Slab", serif;
+}
 .Form {
   text-align: center;
   margin-top: 50px;
@@ -10,46 +17,39 @@ h1 {
 h1 {
   font-size: 60px;
   margin-top: 20px;
-  color: #fd8664;
-  font-family: "Birthstone Bounce", cursive;
-  text-align: center;
+  color: var(--primary-color);
+  font-family: var(--heading-font);
 }
 ul {
-  font-family: "Roboto Slab", serif;
+  font-family: var(--default-font);
   list-style-type: none;
   font-size: 25px;
   margin-bottom: 20px;
   text-transform: capitalize;
+  border-radius: 5px;
+  margin: 0 100px;
 }
 .mainData {
-  background-color: #fd8664;
+  background-color: var(--primary-color);
   color: white;
-
-  margin: 0 100px;
-  border-radius: 5px;
 }
+
 .AdditionalInfo {
-  background-color: #f6f3ed;
-  border-radius: 5px;
-  margin: 0 100px;
+  background-color: var(--background-color);
 }
 
-.planetBig {
+.planet {
   width: 300px;
   display: block;
   margin: 0 auto;
 }
-.planetSmall {
-  width: 50px;
-  display: inline;
-}
+
 footer {
   padding: 30px;
 }
-
 footer a {
   text-decoration: none;
-  color: #c5dfa3;
+  color: var(--secondary-color);
 }
 footer a:hover {
   color: black;
@@ -58,11 +58,8 @@ footer a:hover {
   h1 {
     font-size: 40px;
   }
-  .mainData,
-  .AdditionalInfo {
-    margin: 0 auto;
-  }
   ul {
+    margin: 0 auto;
     padding: 0;
   }
 }

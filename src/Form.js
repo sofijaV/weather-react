@@ -101,7 +101,7 @@ export default function Form() {
       <div>
         {form}
         <h1>Where are you at?</h1>
-        <img src={planet} alt="Planet-Earth" className="planetBig" />
+        <img src={planet} alt="Planet-Earth" className="planet img-fluid" />
         {footer}
       </div>
     );
