@@ -89,7 +89,10 @@ export default function Form() {
         {form}
         {overview}
         <footer className="text-center">
-          Open source-code on Github by Sofija
+          <a href="https://github.com/sofijaV/weather-react" target="_blank">
+            Open source-code
+          </a>{" "}
+          by Sofija
         </footer>
       </div>
     );
@@ -100,7 +103,10 @@ export default function Form() {
         <h1>Where in the world are you?</h1>
         <img src={planet} alt="Planet-Earth" className="planetBig" />
         <footer className="text-center">
-          Open source-code on Github by Sofija
+          <a href="https://github.com/sofijaV/weather-react" target="_blank">
+            Open source-code
+          </a>{" "}
+          by Sofija
         </footer>
       </div>
     );

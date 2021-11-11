@@ -41,7 +41,17 @@ ul {
 .planetSmall {
   width: 50px;
   display: inline;
-  text-align: center;
+}
+footer {
+  padding: 30px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #c5dfa3;
+}
+footer a:hover {
+  color: black;
 }
 @media (max-width: 767px) {
   .Form button {
