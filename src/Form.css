@@ -1,6 +1,6 @@
 .Form {
   text-align: center;
-  margin: 50px 0 20px;
+  margin-top: 50px;
 }
 ul,
 h1 {
@@ -12,29 +12,36 @@ h1 {
   margin-top: 20px;
   color: #fd8664;
   font-family: "Birthstone Bounce", cursive;
+  text-align: center;
 }
 ul {
   font-family: "Roboto Slab", serif;
   list-style-type: none;
   font-size: 25px;
-  margin: 0px;
+
   margin-bottom: 20px;
-  padding: 0px;
   text-transform: capitalize;
 }
-.Note {
-  width: 200px;
-  height: auto;
-  filter: brightness(105%) sepia(60%);
+.mainData {
+  background-color: #fd8664;
+  color: white;
   padding: 10px;
+  border-radius: 20px;
 }
-.Weather-icon {
-  width: 90px;
-  margin-top: 40px;
-  position: relative;
-  bottom: 180px;
-  left: 70px;
-  transform: skew(5deg, 0deg);
+.AdditionalInfo {
+  background-color: #f6f3ed;
+  border-radius: 20px;
+}
+
+.planetBig {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+.planetSmall {
+  width: 50px;
+  display: inline;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .Form button {

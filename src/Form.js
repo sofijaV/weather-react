@@ -1,10 +1,12 @@
 import axios from "axios";
 import React, { useState } from "react";
 import "./Form.css";
+import planet from "./planet.png";
 
 export default function Form() {
   const [city, setCity] = useState(null);
   const [loaded, setLoaded] = useState(false);
+  const [overview, setOverview] = useState(null);
   function updateCity(event) {
     event.preventDefault();
     setCity(event.target.value);
@@ -16,6 +18,7 @@ export default function Form() {
     axios.get(url).then(getData);
   }
   function getData(response) {
+    setLoaded(true);
     let Data = {
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
@@ -26,43 +29,80 @@ export default function Form() {
       high: Math.round(response.data.main.temp_max),
       low: Math.round(response.data.main.temp_min),
     };
-    setLoaded(
-      <div className="row">
-        <div className="col-7">
-          <h1>{Data.name}</h1>
-          <ul>
+    setOverview(
+      <div>
+        <h1>
+          {Data.name}{" "}
+          <img
+            className="main"
+            src={`http://openweathermap.org/img/wn/${Data.icon}@2x.png`}
+            alt="weather-icon"
+          />
+        </h1>
+        <ul>
+          <div className="mainData">
             <li>{Data.description}</li>
             <li>{Data.temperature}°C</li>
+          </div>
+          <div className="AdditionalInfo">
             <li>
-              High {Data.high}° | Low {Data.low}°{" "}
+              High: <strong> {Data.high} ° </strong>| Low:{" "}
+              <strong>{Data.low} °</strong>{" "}
             </li>
-            <li>Humidity: {Data.humidity}% </li>
-            <li>Wind speed: {Data.wind}km/h </li>
-          </ul>
-        </div>
+            <li>
+              Humidity: <strong>{Data.humidity}%</strong>{" "}
+            </li>
+            <li>
+              Wind speed: <strong>{Data.wind}km/h </strong>
+            </li>
+          </div>
+        </ul>
       </div>
     );
   }
-
-  return (
+  let form = (
     <div className="Form">
       <form onSubmit={handleSubmit}>
         <div className="row">
-          <div className="col-md-4">
+          <div className="col-md-6">
             <input
               type="text"
               placeholder="Enter city name..."
               onChange={updateCity}
             ></input>
           </div>
-          <div className="col-md-3">
+
+          <div className="col-md-6">
             <button type="submit" className="btn btn-outline-secondary">
               Search
             </button>
           </div>
         </div>
       </form>
-      {loaded}
+      <hr />
     </div>
   );
+
+  if (loaded) {
+    return (
+      <div>
+        {form}
+        {overview}
+        <footer className="text-center">
+          Open source-code on Github by Sofija
+        </footer>
+      </div>
+    );
+  } else {
+    return (
+      <div>
+        {form}
+        <h1>Where in the world are you?</h1>
+        <img src={planet} alt="Planet-Earth" className="planetBig" />
+        <footer className="text-center">
+          Open source-code on Github by Sofija
+        </footer>
+      </div>
+    );
+  }
 }
