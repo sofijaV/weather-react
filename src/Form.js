@@ -16,6 +16,11 @@ export default function Form() {
     let key = "6c8c6f63dce062a0b5a3b082e9b52d3a";
     let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
     axios.get(url).then(getData);
+    let forecasturl = `https://api.openweathermap.org/data/2.5/forecast/daily?q=${city}&appid=${key}`;
+    axios.get(forecasturl).then(showForecast);
+  }
+  function showForecast(response) {
+    console.log(response);
   }
   function getData(response) {
     setLoaded(true);
@@ -62,7 +67,7 @@ export default function Form() {
   }
   let form = (
     <div className="Form">
-      <form onSubmit={handleSubmit} className="d-flex justify-content-around">
+      <form onSubmit={handleSubmit} className="d-flex justify-content-center">
         <input
           type="text"
           placeholder="Enter city name..."
@@ -72,7 +77,6 @@ export default function Form() {
           Search
         </button>
       </form>
-      <hr />
     </div>
   );
   let footer = (

@@ -1,4 +1,11 @@
 body {
   max-width: 600px;
   margin: 20px auto;
+  border: 4px ridge #c5dfa3;
+  border-radius: 70px;
+}
+@media (max-width: 767px) {
+  body {
+    border: none;
+  }
 }

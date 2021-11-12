@@ -7,7 +7,10 @@
 }
 .Form {
   text-align: center;
-  margin-top: 50px;
+  margin: 20px 60px;
+  padding: 20px 0;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
 }
 ul,
 h1 {
@@ -26,16 +29,17 @@ ul {
   font-size: 25px;
   margin-bottom: 20px;
   text-transform: capitalize;
-  border-radius: 5px;
   margin: 0 100px;
 }
 .mainData {
   background-color: var(--primary-color);
   color: white;
+  border-radius: 20px;
 }
 
 .AdditionalInfo {
   background-color: var(--background-color);
+  border-radius: 20px;
 }
 
 .planet {
@@ -46,6 +50,7 @@ ul {
 
 footer {
   padding: 30px;
+  font-family: var(--default-font);
 }
 footer a {
   text-decoration: none;
@@ -61,5 +66,8 @@ footer a:hover {
   ul {
     margin: 0 auto;
     padding: 0;
+  }
+  .Form {
+    margin: 0 auto;
   }
 }
