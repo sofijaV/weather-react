@@ -7,5 +7,6 @@ body {
 @media (max-width: 767px) {
   body {
     border: none;
+    margin: 0 auto;
   }
 }
