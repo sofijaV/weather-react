@@ -7,10 +7,9 @@
 }
 .Form {
   text-align: center;
-  margin: 20px 60px;
+
   padding: 20px 0;
   background-color: var(--secondary-color);
-  border-radius: 30px;
 }
 ul,
 h1 {
@@ -48,17 +47,6 @@ ul {
   margin: 0 auto;
 }
 
-footer {
-  padding: 30px;
-  font-family: var(--default-font);
-}
-footer a {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-footer a:hover {
-  color: black;
-}
 @media (max-width: 767px) {
   h1 {
     font-size: 40px;
