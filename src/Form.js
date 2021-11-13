@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./Form.css";
 import planet from "./planet.png";
 import Time from "./Time.js";
+import Forecast from "./Forecast.js";
 
 export default function Form() {
   const [city, setCity] = useState(null);
@@ -82,6 +83,7 @@ export default function Form() {
         {form}
         <Time />
         {overview}
+        <Forecast />
       </div>
     );
   } else {

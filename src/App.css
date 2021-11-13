@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #fd8664;
+  --secondary-color: #ffb459;
+  --background-color: #f6f3ed;
+  --heading-font: "Birthstone Bounce", cursive;
+  --default-font: "Roboto Slab", serif;
+}
 body {
   max-width: 600px;
   margin: 20px auto;
