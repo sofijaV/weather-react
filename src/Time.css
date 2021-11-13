@@ -1,0 +1,6 @@
+.Time {
+  font-family: var(--default-font);
+  font-size: larger;
+  background-color: var(--background-color);
+  padding: 10px;
+}

@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import "./Form.css";
 import planet from "./planet.png";
+import Time from "./Time.js";
 
 export default function Form() {
   const [city, setCity] = useState(null);
@@ -79,6 +80,7 @@ export default function Form() {
     return (
       <div>
         {form}
+        <Time />
         {overview}
       </div>
     );
