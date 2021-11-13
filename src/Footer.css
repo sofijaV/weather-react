@@ -1,7 +1,9 @@
 .Footer {
-  padding: 30px;
+  padding: 10px;
+  margin-top: 40px;
   font-family: var(--default-font);
   font-weight: 800;
+  background: var(--primary-color);
 }
 .Footer a {
   text-decoration: none;
