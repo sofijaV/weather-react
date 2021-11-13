@@ -3,4 +3,5 @@
   font-size: larger;
   background-color: var(--background-color);
   padding: 10px;
+  font-weight: 800;
 }

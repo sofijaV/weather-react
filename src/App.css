@@ -1,8 +1,8 @@
 body {
   max-width: 600px;
   margin: 20px auto;
-  border: 2px solid var(--secondary-color);
-  border-radius: 10px;
+  border: 2px solid var(--background-color);
+  border-radius: 20px;
 }
 @media (max-width: 767px) {
   body {
