@@ -7,7 +7,6 @@
 }
 .Form {
   text-align: center;
-
   padding: 20px 0;
   background-color: var(--secondary-color);
 }
@@ -54,13 +53,5 @@ ul {
   ul {
     margin: 0 auto;
     padding: 0;
-  }
-  .Form {
-    margin: 0 auto;
-    border-radius: 5px;
-  }
-  .mainData,
-  .AdditionalInfo {
-    border-radius: 5px;
   }
 }
