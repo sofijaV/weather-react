@@ -22,7 +22,7 @@ export default function Time() {
   }
   return (
     <div className="Time">
-      {day} {hour}:{minute}
+      Last Update: {day} {hour}:{minute}{" "}
     </div>
   );
 }

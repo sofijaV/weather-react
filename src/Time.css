@@ -1,7 +1,10 @@
 .Time {
   font-family: var(--default-font);
-  font-size: larger;
-  background-color: var(--background-color);
-  padding: 10px;
-  font-weight: 800;
+  text-align: left;
+  color: #6d6d71;
+  font-weight: bold;
+
+  font-size: 15px;
+
+  padding: 20px;
 }
