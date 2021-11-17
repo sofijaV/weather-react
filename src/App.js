@@ -6,9 +6,11 @@ import Footer from "./Footer.js";
 //import Time from "./Time.js";
 export default function App() {
   return (
-    <div className="App">
-      <Form />
-      <Footer />
+    <div className="container">
+      <div className="App">
+        <Form />
+        <Footer />
+      </div>
     </div>
   );
 }
