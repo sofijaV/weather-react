@@ -2,9 +2,6 @@
   font-family: var(--default-font);
   text-align: left;
   color: #6d6d71;
-  font-weight: bold;
-
-  font-size: 15px;
-
-  padding: 20px;
+  font-size: 18px;
+  padding: 10px;
 }

@@ -67,6 +67,7 @@ export default function Form() {
         <input
           type="text"
           placeholder="Enter city name..."
+          autoFocus="on"
           onChange={updateCity}
         ></input>
         <button type="submit" className="btn btn-outline-secondary">
