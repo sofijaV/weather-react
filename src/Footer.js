@@ -8,9 +8,9 @@ export default function Footer() {
         target="_blank"
         rel="noopener noreferrer"
       >
-        Open source-code
+        Open source-code on GitHub
       </a>{" "}
-      by Sofija
+      created by Sofija
     </div>
   );
 }
