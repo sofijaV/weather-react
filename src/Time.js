@@ -1,5 +1,5 @@
 import React from "react";
-import "./Time.css";
+
 export default function Time() {
   let now = new Date();
   let days = [

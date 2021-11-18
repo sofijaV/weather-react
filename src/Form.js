@@ -2,12 +2,11 @@ import axios from "axios";
 import React, { useState } from "react";
 import "./Form.css";
 import planet from "./planet.png";
-import Time from "./Time.js";
+import WeatherInfo from "./WeatherInfo";
 
 export default function Form() {
   const [city, setCity] = useState(null);
-  const [loaded, setLoaded] = useState(false);
-  const [overview, setOverview] = useState(null);
+  const [info, setInfo] = useState({ loaded: false });
   function updateCity(event) {
     event.preventDefault();
     setCity(event.target.value);
@@ -19,8 +18,8 @@ export default function Form() {
     axios.get(url).then(getData);
   }
   function getData(response) {
-    setLoaded(true);
-    let Data = {
+    setInfo({
+      loaded: true,
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
@@ -29,37 +28,7 @@ export default function Form() {
       name: response.data.name,
       high: Math.round(response.data.main.temp_max),
       low: Math.round(response.data.main.temp_min),
-    };
-    setOverview(
-      <div>
-        <h1>
-          {Data.name}{" "}
-          <img
-            className="main"
-            src={`http://openweathermap.org/img/wn/${Data.icon}@2x.png`}
-            alt="weather-icon"
-          />
-        </h1>
-        <ul>
-          <div className="mainData">
-            <li>{Data.description}</li>
-            <li>{Data.temperature}°C</li>
-          </div>
-          <div className="AdditionalInfo">
-            <li>
-              High: <strong> {Data.high} ° </strong>| Low:{" "}
-              <strong>{Data.low} °</strong>{" "}
-            </li>
-            <li>
-              Humidity: <strong>{Data.humidity}%</strong>{" "}
-            </li>
-            <li>
-              Wind speed: <strong>{Data.wind}km/h </strong>
-            </li>
-          </div>
-        </ul>
-      </div>
-    );
+    });
   }
   let form = (
     <div className="Form">
@@ -77,12 +46,11 @@ export default function Form() {
     </div>
   );
 
-  if (loaded) {
+  if (info.loaded) {
     return (
       <div>
         {form}
-        <Time />
-        {overview}
+        <WeatherInfo data={info} />
       </div>
     );
   } else {
