@@ -1,0 +1,18 @@
+a {
+  text-decoration: none;
+  color: #474c5c;
+  display: inline;
+  font-size: 15px;
+  position: relative;
+  bottom: 15px;
+  left: 5px;
+}
+a:hover {
+  color: white;
+}
+.active {
+  color: white;
+}
+.active:hover {
+  cursor: auto;
+}

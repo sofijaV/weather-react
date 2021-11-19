@@ -1,46 +1,8 @@
 import React, { useState } from "react";
 import "./WeatherInfo.css";
 import Time from "./Time.js";
+import WeatherTemperature from "./WeatherTemperature";
 export default function WeatherInfo(props) {
-  const [temperature, setTemperature] = useState(
-    <li>
-      {props.data.temperature}
-      <a href="#" onClick={convertToCelsius}>
-        <span className="active">°C | </span>
-      </a>{" "}
-      <a href="#" onClick={convertToFahrenheit}>
-        °F
-      </a>
-    </li>
-  );
-  function convertToFahrenheit(event) {
-    event.preventDefault();
-    setTemperature(
-      <li>
-        {Math.round((props.data.temperature * 9) / 5 + 32)}
-        <a href="#" onClick={convertToCelsius}>
-          °C
-        </a>{" "}
-        <a href="#" onClick={convertToFahrenheit}>
-          <span className="active">| °F</span>
-        </a>
-      </li>
-    );
-  }
-  function convertToCelsius(event) {
-    event.preventDefault();
-    setTemperature(
-      <li>
-        {props.data.temperature}
-        <a href="#" onClick={convertToCelsius}>
-          <span className="active">°C | </span>
-        </a>{" "}
-        <a href="#" onClick={convertToFahrenheit}>
-          °F
-        </a>
-      </li>
-    );
-  }
   return (
     <div className="WeatherInfo">
       <h1>
@@ -53,7 +15,7 @@ export default function WeatherInfo(props) {
       </h1>
       <ul>
         <div className="mainData">
-          {temperature}
+          <WeatherTemperature celsius={props.data.temperature} />
           <li>{props.data.description}</li>
         </div>
         <div className="AdditionalInfo">
