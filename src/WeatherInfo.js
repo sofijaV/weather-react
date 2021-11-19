@@ -1,9 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import "./WeatherInfo.css";
 import Time from "./Time.js";
 export default function WeatherInfo(props) {
+  const [temperature, setTemperature] = useState(
+    <li>
+      {props.data.temperature}
+      <a href="#" onClick={convertToCelsius}>
+        <span className="active">°C | </span>
+      </a>{" "}
+      <a href="#" onClick={convertToFahrenheit}>
+        °F
+      </a>
+    </li>
+  );
+  function convertToFahrenheit(event) {
+    event.preventDefault();
+    setTemperature(
+      <li>
+        {Math.round((props.data.temperature * 9) / 5 + 32)}
+        <a href="#" onClick={convertToCelsius}>
+          °C
+        </a>{" "}
+        <a href="#" onClick={convertToFahrenheit}>
+          <span className="active">| °F</span>
+        </a>
+      </li>
+    );
+  }
+  function convertToCelsius(event) {
+    event.preventDefault();
+    setTemperature(
+      <li>
+        {props.data.temperature}
+        <a href="#" onClick={convertToCelsius}>
+          <span className="active">°C | </span>
+        </a>{" "}
+        <a href="#" onClick={convertToFahrenheit}>
+          °F
+        </a>
+      </li>
+    );
+  }
   return (
-    <div>
+    <div className="WeatherInfo">
       <h1>
         {props.data.name}{" "}
         <img
@@ -13,18 +52,11 @@ export default function WeatherInfo(props) {
         />
       </h1>
       <ul>
-        <li>
-          <Time />
-        </li>
         <div className="mainData">
+          {temperature}
           <li>{props.data.description}</li>
-          <li>{props.data.temperature}°C</li>
         </div>
         <div className="AdditionalInfo">
-          <li>
-            High: <strong> {props.data.high} ° </strong>| Low:{" "}
-            <strong>{props.data.low} °</strong>{" "}
-          </li>
           <li>
             Humidity: <strong>{props.data.humidity}%</strong>{" "}
           </li>
@@ -32,6 +64,10 @@ export default function WeatherInfo(props) {
             Wind speed: <strong>{props.data.wind}km/h </strong>
           </li>
         </div>
+        <br></br>
+        <li>
+          <Time />
+        </li>
       </ul>
     </div>
   );

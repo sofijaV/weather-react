@@ -18,10 +18,10 @@ h2 {
   font-size: 15px;
   letter-spacing: 5px;
 }
-ul {
+.WeatherInfo ul {
   font-family: var(--default-font);
   list-style-type: none;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 20px;
   text-transform: capitalize;
   margin: 0 100px;
@@ -29,18 +29,37 @@ ul {
 .mainData {
   background-color: var(--primary-color);
   color: white;
-  border-radius: 20px;
+  border-radius: 5px;
+  font-size: 30px;
 }
 
 .AdditionalInfo {
   background-color: var(--background-color);
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 .planet {
   width: 300px;
   display: block;
   margin: 0 auto;
+}
+.WeatherInfo a {
+  text-decoration: none;
+  color: #474c5c;
+  display: inline;
+  font-size: 15px;
+  position: relative;
+  bottom: 15px;
+  left: 5px;
+}
+.WeatherInfo a:hover {
+  color: white;
+}
+.active {
+  color: white;
+}
+.active:hover {
+  cursor: auto;
 }
 
 @media (max-width: 767px) {

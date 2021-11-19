@@ -26,8 +26,6 @@ export default function Form() {
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
       name: response.data.name,
-      high: Math.round(response.data.main.temp_max),
-      low: Math.round(response.data.main.temp_min),
     });
   }
   let form = (
