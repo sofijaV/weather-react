@@ -15,24 +15,24 @@ export default function WeatherTemperature(props) {
     return (
       <li>
         {props.celsius}
-        <a href="#" onClick={convertToCelsius}>
-          <span className="active">°C | </span>
-        </a>{" "}
-        <a href="#" onClick={convertToFahrenheit}>
-          °F
-        </a>
+        <span className="units">
+          <span onClick={convertToCelsius} className="active">
+            °C |
+          </span>
+          <span onClick={convertToFahrenheit}>°F</span>
+        </span>
       </li>
     );
   } else {
     return (
       <li>
         {Math.round((props.celsius * 9) / 5 + 32)}
-        <a href="#" onClick={convertToCelsius}>
-          °C
-        </a>{" "}
-        <a href="#" onClick={convertToFahrenheit}>
-          <span className="active">| °F</span>
-        </a>
+        <span className="units">
+          <span onClick={convertToCelsius}>°C</span>{" "}
+          <span onClick={convertToFahrenheit} className="active">
+            | °F
+          </span>
+        </span>
       </li>
     );
   }

@@ -1,18 +1,18 @@
-.WeatherInfo a {
+.units span {
   text-decoration: none;
   color: #474c5c;
-  display: inline;
   font-size: 15px;
   position: relative;
-  bottom: 15px;
-  left: 5px;
+  bottom: 10px;
 }
-.WeatherInfo a:hover {
+span:hover {
+  cursor: pointer;
   color: white;
 }
-.active {
+
+span .active {
   color: white;
 }
-.active:hover {
+span .active:hover {
   cursor: auto;
 }
