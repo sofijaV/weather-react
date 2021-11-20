@@ -1,4 +1,4 @@
-a {
+.WeatherInfo a {
   text-decoration: none;
   color: #474c5c;
   display: inline;
@@ -7,7 +7,7 @@ a {
   bottom: 15px;
   left: 5px;
 }
-a:hover {
+.WeatherInfo a:hover {
   color: white;
 }
 .active {

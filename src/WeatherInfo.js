@@ -2,16 +2,15 @@ import React, { useState } from "react";
 import "./WeatherInfo.css";
 import Time from "./Time.js";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherIcon from "./WeatherIcon.js";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
       <h1>
         {props.data.name}{" "}
-        <img
-          className="main"
-          src={`http://openweathermap.org/img/wn/${props.data.icon}@2x.png`}
-          alt="weather-icon"
-        />
+        <span className="p-4">
+          <WeatherIcon code={props.data.icon} />
+        </span>
       </h1>
       <ul>
         <div className="mainData">
