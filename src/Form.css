@@ -4,17 +4,6 @@
   background-color: var(--secondary-color);
   border-radius: 10px;
 }
-ul,
-h1 {
-  color: #474c5c;
-  text-align: center;
-}
-h1 {
-  font-size: 60px;
-  margin-top: 20px;
-  color: var(--primary-color);
-  font-family: var(--heading-font);
-}
 h2 {
   font-family: var(--default-font);
   text-align: center;
@@ -23,41 +12,4 @@ h2 {
   line-height: 0.5;
   font-size: 15px;
   letter-spacing: 5px;
-}
-ul {
-  font-family: var(--default-font);
-  list-style-type: none;
-  font-size: 25px;
-  margin-bottom: 20px;
-  text-transform: capitalize;
-  margin: 0 100px;
-}
-.mainData {
-  background-color: var(--primary-color);
-  color: white;
-  border-radius: 20px;
-}
-
-.AdditionalInfo {
-  background-color: var(--background-color);
-  border-radius: 20px;
-}
-
-.planet {
-  width: 300px;
-  display: block;
-  margin: 0 auto;
-}
-
-@media (max-width: 767px) {
-  h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 10px;
-  }
-  ul {
-    margin: 0 auto;
-    padding: 0;
-  }
 }
