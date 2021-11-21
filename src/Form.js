@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "./Form.css";
 import planet from "./planet.png";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Form() {
   const [city, setCity] = useState(null);
@@ -49,6 +50,7 @@ export default function Form() {
       <div>
         {form}
         <WeatherInfo data={info} />
+        <WeatherForecast />
       </div>
     );
   } else {
