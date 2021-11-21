@@ -20,6 +20,7 @@ export default function Form() {
   }
   function getData(response) {
     setInfo({
+      coordinates: response.data.coord,
       loaded: true,
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
@@ -50,7 +51,7 @@ export default function Form() {
       <div>
         {form}
         <WeatherInfo data={info} />
-        <WeatherForecast />
+        <WeatherForecast coordinates={info.coordinates} />
       </div>
     );
   } else {
