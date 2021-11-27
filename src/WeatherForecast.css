@@ -1,12 +1,13 @@
 .WeatherForecast {
   text-align: center;
-  color: white;
+  color: #6d6d71;
+  margin: 10px;
 }
 .day {
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--background-color);
   border-radius: 150px;
   padding: 10px;
-  background-color: var(--primary-color);
+  background-color: #c5dfa3;
 }
 .WeatherForecast-day {
   font-family: var(--heading-font);
@@ -15,4 +16,10 @@
 .WeatherForecast-temperature-min {
   opacity: 0.5;
   margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .day {
+    padding: 5px;
+    border-radius: 5px;
+  }
 }

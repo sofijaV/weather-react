@@ -6,7 +6,7 @@
   --default-font: "Roboto Slab", serif;
 }
 body {
-  max-width: 600px;
+  max-width: 700px;
   margin: 20px auto;
   border: 2px solid var(--background-color);
   border-radius: 20px;
