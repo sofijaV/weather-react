@@ -11,5 +11,5 @@
   color: var(--background-color);
 }
 .Footer a:hover {
-  color: black;
+  color: var(--font-color);
 }

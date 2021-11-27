@@ -2,6 +2,7 @@
   --primary-color: #fd8664;
   --secondary-color: #ffb459;
   --background-color: #f6f3ed;
+  --font-color: #474c5c;
   --heading-font: "Birthstone Bounce", cursive;
   --default-font: "Roboto Slab", serif;
 }
@@ -10,6 +11,7 @@ body {
   margin: 20px auto;
   border: 2px solid var(--background-color);
   border-radius: 20px;
+  color: var(--font-color);
 }
 .container {
   padding: 0;

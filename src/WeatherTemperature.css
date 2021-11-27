@@ -1,6 +1,6 @@
 .units span {
   text-decoration: none;
-  color: #474c5c;
+  color: var(--background-color);
   font-size: 15px;
   position: relative;
   bottom: 10px;
@@ -8,11 +8,11 @@
 }
 span:hover {
   cursor: pointer;
-  color: white;
+  color: #474c5c;
 }
 
 span .active {
-  color: white;
+  color: #474c5c;
 }
 span .active:hover {
   cursor: auto;

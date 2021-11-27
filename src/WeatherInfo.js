@@ -9,7 +9,7 @@ export default function WeatherInfo(props) {
       <h1>
         {props.data.name}{" "}
         <span className="p-4">
-          <WeatherIcon code={props.data.icon} size={70} color={"#FD8664"} />
+          <WeatherIcon code={props.data.icon} size={70} color={"#474c5c"} />
         </span>
       </h1>
       <ul>

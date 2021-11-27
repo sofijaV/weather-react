@@ -25,7 +25,7 @@ export default function WeatherForecastDay(props) {
         <WeatherIcon
           code={props.forecast.weather[0].icon}
           size={40}
-          color="#6d6d71"
+          color="#474c5c"
         />
       </div>
       <div className="WeatherForecast-temperature">
