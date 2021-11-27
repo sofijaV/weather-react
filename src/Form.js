@@ -20,8 +20,8 @@ export default function Form() {
   }
   function getData(response) {
     setInfo({
-      coordinates: response.data.coord,
       loaded: true,
+      coordinates: response.data.coord,
       temperature: Math.round(response.data.main.temp),
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
