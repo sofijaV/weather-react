@@ -1,7 +1,7 @@
 .Form {
   text-align: center;
   padding: 20px 0;
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
   border-radius: 10px;
 }
 h2 {

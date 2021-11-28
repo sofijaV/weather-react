@@ -6,7 +6,7 @@
   border: 2px solid var(--background-color);
   border-radius: 150px;
   padding: 10px;
-  background-color: #c5dfa3;
+  background-color: var(--secondary-color);
 }
 .WeatherForecast-day {
   font-family: var(--heading-font);
