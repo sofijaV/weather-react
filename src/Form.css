@@ -1,11 +1,10 @@
 .Form {
   text-align: center;
   padding: 20px 0;
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   border-radius: 10px;
 }
 h2 {
-  font-family: var(--default-font);
   text-align: center;
   color: #6d6d71;
   font-weight: bold;

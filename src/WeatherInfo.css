@@ -1,6 +1,5 @@
 ul,
 h1 {
-  color: #474c5c;
   text-align: center;
 }
 h1 {
@@ -8,17 +7,8 @@ h1 {
   margin-top: 20px;
   font-family: var(--heading-font);
 }
-h2 {
-  font-family: var(--default-font);
-  text-align: center;
-  color: #6d6d71;
-  font-weight: bold;
-  line-height: 0.5;
-  font-size: 15px;
-  letter-spacing: 5px;
-}
+
 .WeatherInfo ul {
-  font-family: var(--default-font);
   list-style-type: none;
   font-size: 20px;
   margin-bottom: 20px;
@@ -27,7 +17,6 @@ h2 {
 }
 .mainData {
   background-color: var(--primary-color);
-
   border-radius: 5px;
   font-size: 30px;
 }
@@ -42,13 +31,18 @@ h2 {
   display: block;
   margin: 0 auto;
 }
+.units span {
+  text-decoration: none;
+  color: #474c5c;
+  font-size: 15px;
+  position: relative;
+  bottom: 10px;
+  left: 5px;
+}
 
 @media (max-width: 767px) {
   h1 {
     font-size: 45px;
-  }
-  h2 {
-    font-size: 10px;
   }
   .WeatherInfo ul {
     margin: 0 auto;

@@ -1,6 +1,6 @@
 :root {
   --primary-color: #fd8664;
-  --secondary-color: #ffb459;
+  --secondary-color: #c5dfa3;
   --background-color: #f6f3ed;
   --font-color: #474c5c;
   --heading-font: "Birthstone Bounce", cursive;
@@ -12,6 +12,7 @@ body {
   border: 2px solid var(--background-color);
   border-radius: 20px;
   color: var(--font-color);
+  font-family: var(--default-font);
 }
 .container {
   padding: 0;
